@@ -1,0 +1,10 @@
+/home/ariel/Documents/Development/WebDev/BackEnd/C#/VeterinaryHospital/bin/Debug/netcoreapp2.0/VeterinaryHospital.deps.json
+/home/ariel/Documents/Development/WebDev/BackEnd/C#/VeterinaryHospital/bin/Debug/netcoreapp2.0/VeterinaryHospital.runtimeconfig.json
+/home/ariel/Documents/Development/WebDev/BackEnd/C#/VeterinaryHospital/bin/Debug/netcoreapp2.0/VeterinaryHospital.runtimeconfig.dev.json
+/home/ariel/Documents/Development/WebDev/BackEnd/C#/VeterinaryHospital/bin/Debug/netcoreapp2.0/VeterinaryHospital.dll
+/home/ariel/Documents/Development/WebDev/BackEnd/C#/VeterinaryHospital/bin/Debug/netcoreapp2.0/VeterinaryHospital.pdb
+/home/ariel/Documents/Development/WebDev/BackEnd/C#/VeterinaryHospital/obj/Debug/netcoreapp2.0/VeterinaryHospital.csproj.CoreCompileInputs.cache
+/home/ariel/Documents/Development/WebDev/BackEnd/C#/VeterinaryHospital/obj/Debug/netcoreapp2.0/VeterinaryHospital.AssemblyInfoInputs.cache
+/home/ariel/Documents/Development/WebDev/BackEnd/C#/VeterinaryHospital/obj/Debug/netcoreapp2.0/VeterinaryHospital.AssemblyInfo.cs
+/home/ariel/Documents/Development/WebDev/BackEnd/C#/VeterinaryHospital/obj/Debug/netcoreapp2.0/VeterinaryHospital.dll
+/home/ariel/Documents/Development/WebDev/BackEnd/C#/VeterinaryHospital/obj/Debug/netcoreapp2.0/VeterinaryHospital.pdb
