@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Http;
+
 struct Localizable
 {
     public static string env = "Development";
@@ -35,6 +37,9 @@ class S : Environment
     public string notGrantedPrivileges;
     public S()
     {
+
+        this.successAccess = "success access";
+        this.notGrantedPrivileges = "You don't have granted privileges";
         if(this.isInProduction())
         {
             //Variables on Production Environment
@@ -42,8 +47,10 @@ class S : Environment
         } else {
             //variables on development environment
             this.genericMessage = "Hola Mamá!";
-            this.successAccess = "success access";
-            this.notGrantedPrivileges = "You don't have granted privileges";
         }
+    }
+    public BaseRequestH parseHeaders(IHeaderDictionary headerDict)
+    {
+        return new BaseRequestH(headerDict["apiKey"], headerDict["nameRequest"], headerDict["accessToken"]);
     }
 }
