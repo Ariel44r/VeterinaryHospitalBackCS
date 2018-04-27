@@ -13,6 +13,7 @@ namespace VeterinaryHospital.Controllers
     public class AccessController : Controller
     {
         S _s = new S();
+        DatabaseManager _db = new DatabaseManager();
 
         //POST api/Login
         [HttpPost]
@@ -33,7 +34,8 @@ namespace VeterinaryHospital.Controllers
         {
             Console.ForegroundColor = _s.validateApiKey(headers.apiKey) ? ConsoleColor.Green : ConsoleColor.Red;
             Console.WriteLine(" ===> [ Headers ]: {0}", JsonConvert.SerializeObject(headers));
-            return(_s.validateApiKey(headers.apiKey) ? new LoginResponseC(0, _s.successAccess, null, null) : new BadResponse(6, _s.notGrantedPrivileges) as BaseResponse);
+            BaseUser[] user = _db.SqlConnection<BaseUser>();
+            return(_s.validateApiKey(headers.apiKey) ? new LoginResponseC(0, _s.successAccess, user[0].user_Name, user[0].password) : new BadResponse(6, _s.notGrantedPrivileges) as BaseResponse);
         }
     }
 }

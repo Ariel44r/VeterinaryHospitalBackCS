@@ -5,6 +5,7 @@ struct Localizable
     public static string env = "Development";
     public static string lang = "Eng";
     public static string apiKey = "api-key-VeterinaryHospital-web-dev";
+    public static string connectionString = "Server=localhost;Database=VeterinaryHospital;User Id=SA;Password=Etaigual120pi";
 }
 
 class Environment
@@ -35,11 +36,15 @@ class S : Environment
     public string genericMessage;
     public string successAccess;
     public string notGrantedPrivileges;
+    public string connectionString;
+    public string currentQuery;
     public S()
     {
 
         this.successAccess = "success access";
         this.notGrantedPrivileges = "You don't have granted privileges";
+        this.connectionString = Localizable.connectionString;  
+        this.currentQuery = "SELECT * FROM tableTest;";      
         if(this.isInProduction())
         {
             //Variables on Production Environment
